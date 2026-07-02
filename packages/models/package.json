@@ -1,25 +1,25 @@
 {
-	"name": "@repo/models",
-	"version": "1.0.0",
-	"private": true,
-	"type": "module",
-	"exports": {
-		".": {
-			"types": "./src/index.ts",
-			"import": "./dist/index.js"
-		}
-	},
-	"scripts": {
-		"build": "tsc",
-		"typecheck": "tsc --noEmit",
-		"lint": "tsc --noEmit",
-		"sync": "tsx scripts/sync.ts"
-	},
-	"devDependencies": {
-		"@repo/tsconfig": "workspace:*",
-		"tsx": "^4.19.2"
-	},
-	"dependencies": {
-		"@repo/types": "workspace:*"
-	}
+  "name": "@repo/models",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./src/index.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "node init && tsc",
+    "typecheck": "tsc --noEmit",
+    "lint": "tsc --noEmit",
+    "sync": "tsx scripts/sync.ts"
+  },
+  "devDependencies": {
+    "@repo/tsconfig": "workspace:*",
+    "tsx": "^4.19.2"
+  },
+  "dependencies": {
+    "@repo/types": "workspace:*"
+  }
 }

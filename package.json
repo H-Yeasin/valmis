@@ -1,32 +1,32 @@
 {
-	"name": "valmis",
-	"private": true,
-	"version": "1.0.0",
-	"scripts": {
-		"build": "dotenv -- turbo run build",
-		"dev": "dotenv -- turbo run dev",
-		"lint": "dotenv -- turbo run lint",
-		"typecheck": "dotenv -- turbo run typecheck",
-		"clean": "turbo run clean",
-		"format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md,css}\"",
-		"db:generate": "dotenv -- pnpm --filter @repo/backend exec drizzle-kit generate",
-		"db:migrate": "dotenv -- pnpm --filter @repo/backend exec drizzle-kit migrate",
-		"db:studio": "dotenv -- pnpm --filter @repo/backend exec drizzle-kit studio",
-		"db:push": "dotenv -- pnpm --filter @repo/backend exec drizzle-kit push",
-		"docs:dev": "pnpm --filter @repo/docs dev",
-		"docs:build": "pnpm --filter @repo/docs build"
-	},
-	"packageManager": "pnpm@10.20.0",
-	"engines": {
-		"node": ">=20",
-		"pnpm": ">=10"
-	},
-	"devDependencies": {
-		"prettier": "^3.8.3",
-		"turbo": "^2.9.16",
-		"typescript": "^6.0.3"
-	},
-	"dependencies": {
-		"dotenv-cli": "^11.0.0"
-	}
+  "name": "valmis",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "build": "node init && dotenv -- turbo run build",
+    "dev": "node init && dotenv -- turbo run dev",
+    "lint": "dotenv -- turbo run lint",
+    "typecheck": "dotenv -- turbo run typecheck",
+    "clean": "turbo run clean",
+    "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md,css}\"",
+    "db:generate": "dotenv -- pnpm --filter @repo/backend exec drizzle-kit generate",
+    "db:migrate": "dotenv -- pnpm --filter @repo/backend exec drizzle-kit migrate",
+    "db:studio": "dotenv -- pnpm --filter @repo/backend exec drizzle-kit studio",
+    "db:push": "dotenv -- pnpm --filter @repo/backend exec drizzle-kit push",
+    "docs:dev": "pnpm --filter @repo/docs dev",
+    "docs:build": "pnpm --filter @repo/docs build"
+  },
+  "packageManager": "pnpm@10.20.0",
+  "engines": {
+    "node": ">=20",
+    "pnpm": ">=10"
+  },
+  "devDependencies": {
+    "prettier": "^3.8.3",
+    "turbo": "^2.9.16",
+    "typescript": "^6.0.3"
+  },
+  "dependencies": {
+    "dotenv-cli": "^11.0.0"
+  }
 }

